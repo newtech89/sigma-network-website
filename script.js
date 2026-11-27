@@ -167,5 +167,5 @@ if(matchMedia("(prefers-reduced-motion: reduce)").matches){cv.style.display="non
 }
 // auto-load on start
 line(`<span class="m">Wake up... the network has you.</span>`);
-line(`<span class="m">Sigma Network OS v2.0 — type a command or click one below</span>`);line("");
-enqueue("about",false);enqueue("help",false);
+line(`<span class="m">Sigma Network OS v1.0 — type a command or click one below</span>`);line("");
+enqueue("help",false);
