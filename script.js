@@ -167,7 +167,7 @@ if(matchMedia("(prefers-reduced-motion: reduce)").matches){cv.style.display="non
 }
 // auto-load on start
 line(`<span class="m">Wake up... the network has you.</span>`);
-line(`<span class="m">Sigma Network OS v2.0 — type a command or click one below</span>`);
+line(`<span class="m">Sigma Network v2.0 — type a help or click below</span>`);
 (async()=>{
   const logo=[G,`<span class="big">Σ Sigma Network</span>`,`<span class="v">Mine · Earn · Grow</span>`,G,
   `A fair, transparent, community-first coin. Press one button every 24 hours.`,
