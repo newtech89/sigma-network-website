@@ -167,5 +167,13 @@ if(matchMedia("(prefers-reduced-motion: reduce)").matches){cv.style.display="non
 }
 // auto-load on start
 line(`<span class="m">Wake up... the network has you.</span>`);
-line(`<span class="m">Sigma Network OS v2.0 — type a command or click one below</span>`);line("");
-enqueue("about",false);enqueue("help",false);
+line(`<span class="m">Sigma Network OS v2.0 — type a command or click one below</span>`);
+(async()=>{
+  const logo=[G,`<span class="big">Σ Sigma Network</span>`,`<span class="v">Mine · Earn · Grow</span>`,G,
+  `A fair, transparent, community-first coin. Press one button every 24 hours.`,
+  `No hardware. No electricity. No KYC. No cost.`,G,
+  `<span class="ok">●</span> Phase I   <span class="h">PoE</span>  Proof-of-Engagement — <span class="ok">live now</span>`,
+  `<span class="m">○</span> Phase II  <span class="h">PoW</span>  GPU mining mainnet — coming soon`,G];
+  for(const l of logo){line(l);await sleep(l===""?10:70)}
+  line(`<span class="m">type</span> ${R("help")} <span class="m">or click a command below to begin</span>`);line("");
+})();
